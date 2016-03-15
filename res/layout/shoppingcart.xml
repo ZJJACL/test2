@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shoppingcart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/bnt_shuaxin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="CartRefresh"
+        android:text="刷    新" />
+
+    <ListView
+        android:id="@+id/main_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bnt_shuaxin" >
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox
+            android:id="@+id/checkAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:checked="false"
+            android:focusable="false"
+            android:onClick="checkallOnclick" />
+
+        <TextView
+            android:id="@+id/main_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/checkAll"
+            android:text="总价:¥"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sum_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/main_test"
+            android:text="0.0"
+            android:textColor="@color/test1"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/main_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:onClick="jiesuanOnclick"
+            android:text="结算" />
+    </RelativeLayout>
+
+</RelativeLayout>

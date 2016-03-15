@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/backg">
+
+    <TextView
+        android:id="@+id/tvone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="收货人姓名：" />
+
+    <EditText
+        android:id="@+id/etone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvone"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvtwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etone"
+        android:text="联系电话:" />
+
+    <EditText
+        android:id="@+id/ettwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvtwo"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvthree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ettwo"
+        android:text="收货地址；" />
+
+    <EditText
+        android:id="@+id/etthree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvthree"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvefour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etthree"
+        android:text="邮政编号：" />
+
+    <EditText
+        android:id="@+id/etfour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvefour"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/address_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/etfour"
+        android:text="取消" />
+
+    <Button
+        android:id="@+id/address_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/address_cancel"
+        android:layout_toLeftOf="@id/address_cancel"
+        android:text="确认添加" />
+
+</RelativeLayout>

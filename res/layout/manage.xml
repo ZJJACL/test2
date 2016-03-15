@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/management"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg" >
+
+    <ImageView
+        android:id="@+id/main_picture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/theuser" />
+
+    <TextView
+        android:id="@+id/manage_buyeraccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/main_picture"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/main_picture"
+        android:background="#000000"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="changepasswordOnclick"
+            android:text="@string/account_management" />
+
+        <Button
+            android:id="@+id/btnthree"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="addressOnclick"
+            android:text="@string/shipping_address" />
+
+        <Button
+            android:onClick="mywalletOnclick"
+            android:id="@+id/btnfour"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/my_wallet" />
+
+        <Button
+            android:onClick="versionOnclick"
+            android:id="@+id/btnfive"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/version_information" />
+    </LinearLayout>
+
+</RelativeLayout>

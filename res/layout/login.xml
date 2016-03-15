@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg" >
+
+    <TextView
+        android:id="@+id/text_main_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:text="@string/user" />
+
+    <TextView
+        android:id="@+id/pppp"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/text_main_text1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/login_account"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/text_main_accountedit"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/text_main_text1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/pppp" />
+
+    <TextView
+        android:id="@+id/ppppp"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/text_main_accountedit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/user_passward"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/text_main_passwardedit"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/text_main_accountedit"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/ppppp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_main_login"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_main_passwardedit"
+        android:layout_margin="20dp"
+        android:onClick="buyerLoginOnclick"
+        android:text="@string/buyer_login" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/text_main_passwardedit"
+        android:layout_margin="20dp"
+        android:onClick="sellerLoginOnclick"
+        android:text="@string/seller_login" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_main_login"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_horizontal"
+        android:onClick="userRegister"
+        android:text="@string/user_register" />
+
+</RelativeLayout>

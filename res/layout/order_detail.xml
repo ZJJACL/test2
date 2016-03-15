@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:src="@drawable/tv"
+        android:id="@+id/layout_detailimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/layout_order_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_detailimage"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            
+            
+            android:id="@+id/seller_order_store_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="店铺名称：749小卖部" />
+
+        <TextView
+            android:id="@+id/seller_order_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单编号：2015032211330001" />
+        <TextView
+            android:id="@+id/seller_order_goods_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单编号：2015032211330001" />
+        <TextView
+            android:id="@+id/seller_order_goods_sum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单编号：2015032211330001" />
+        <TextView
+            android:id="@+id/seller_order_order_sum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单编号：2015032211330001" />
+        <TextView
+            android:id="@+id/seller_order_buyeraccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单编号：2015032211330001" />
+        <TextView
+            android:id="@+id/seller_order_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单编号：2015032211330001" />
+        <TextView
+            android:id="@+id/seller_order_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单编号：2015032211330001" />
+
+        <TextView
+            android:id="@+id/seller_order_kuaidi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="商品名称：重庆红烧牛肉" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单时间：2015-03-2  11：33" />
+
+       
+
+        <LinearLayout
+            android:id="@+id/lll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_hisorddetail_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dip"
+                android:text="订单状态：" />
+
+            <TextView
+                android:id="@+id/seller_order_isshouhuo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dip"
+                android:text="已完成"
+                android:textColor="#F6A822" />
+        </LinearLayout>
+        
+         <LinearLayout
+            android:id="@+id/lll3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+           
+
+           <Button 
+               android:id="@+id/seller_querenshouhuo"
+                android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="确认收货"
+            android:onClick="querenshouhuoOnclick"
+            
+               />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

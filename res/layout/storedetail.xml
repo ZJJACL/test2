@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imagebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_launcher"
+        android:onClick="detail_onclick" />
+
+    <TextView
+        android:id="@+id/store_good_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imagebutton"
+        android:text="商品的名称"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/store_good_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="30dp"
+        android:visibility="invisible" />
+
+     <TextView
+        android:id="@+id/store_name111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="30dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/store_good_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/store_good_name"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/imagebutton"
+        android:text="商品的价格"
+        android:textSize="30dp" />
+
+</RelativeLayout>

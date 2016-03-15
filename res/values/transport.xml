@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="transportation">  
+        <item>EMS</item>  
+        <item>中通</item>          
+        <item>申通</item>  
+        <item>顺丰</item>          
+    </string-array>    
+</resources>

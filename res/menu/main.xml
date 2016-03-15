@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.webstore.MainActivity">
+
+    <item
+        
+        android:id="@+id/menu_exit"
+        android:enabled="true"
+        android:icon="@drawable/main_menu_exit"
+        android:orderInCategory="1"
+        android:title="退出"/>
+    <item
+        android:id="@+id/menu_cancel"
+        android:enabled="true"
+        android:icon="@drawable/main_menu_about"
+        android:orderInCategory="2"
+        android:title="取消"/>
+
+</menu>
